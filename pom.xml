@@ -8,8 +8,8 @@
   <name>01-maven-web-app</name>
   <url>http://maven.apache.org</url>
    <properties>
-	    <sonar.host.url>http://65.2.57.199:9000/</sonar.host.url>
-	    <sonar.login>sqp_b5ac045ab330024f47e5bc7540a1ba38bc81d4dc</sonar.login>
+	    <sonar.host.url>http://13.235.82.255:9000/</sonar.host.url>
+	    <sonar.login>sqa_357b1dac46ccf1b0dc5e6f9e01022f75f2e387db</sonar.login>
 	</properties>
   <dependencies>
     <dependency>
