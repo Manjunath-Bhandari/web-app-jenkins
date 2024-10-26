@@ -10,16 +10,20 @@
    <properties>
 	    <sonar.host.url>http://13.235.82.255:9000/</sonar.host.url>
 	    <sonar.login>sqa_357b1dac46ccf1b0dc5e6f9e01022f75f2e387db</sonar.login>
+      <java.version>1.8</java.version>
+      <spring-boot.version>2.5.5</spring-boot.version>
 	</properties>
   <dependencies>
     <dependency>
 	        <groupId>org.springframework.boot</groupId> 
 	        <artifactId>spring-boot-starter-data-jpa</artifactId>
+          <version>${spring-boot.version}</version>
 	    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
+      <scope>test</scope>
     </dependency>
    
   </dependencies>
@@ -30,6 +34,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.1</version>
+      </plugin>
+      <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring-boot.version}</version>
       </plugin>
     </plugins>
   </build>
